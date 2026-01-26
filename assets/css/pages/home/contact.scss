@@ -1,0 +1,116 @@
+.contact {
+  width: 100%;
+  display: flex;
+  margin-top: 190px;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-title h2 {
+      font-size: 54px;
+      font-weight: 500;
+      color: rgb(239, 238, 255);
+      line-height: 1.2;
+    }
+    &-text {
+      margin-bottom: 10px;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(239, 238, 255, 0.75);
+        line-height: 1.6;
+      }
+    }
+    &-info {
+      display: flex;
+      margin-bottom: 10px;
+      &-item {
+        display: flex;
+        gap: 15px;
+        p {
+          font-size: 24px;
+          font-weight: 500;
+          color: rgb(239, 238, 255);
+          display: flex;
+          align-items: center;
+        }
+      }
+      &-item-2 {
+        display: flex;
+        gap: 15px;
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: rgb(239, 238, 255);
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    &-form {
+      display: flex;
+      gap: 20px;
+      input {
+        padding: 18px 18px;
+        background-color: #ebe9fe;
+        font-size: 18px;
+        color: black;
+        border-radius: 999px;
+        border: none;
+      }
+      &-btn {
+        padding: 5px 30px;
+        border-radius: 999px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 18px;
+        background: linear-gradient(
+          180deg,
+          var(--purple-mid),
+          var(--purple-dark)
+        );
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background: #6316ff;
+        }
+      }
+    }
+  }
+  &-img {
+    &-x {
+      margin-left: 70px;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-mask-image: url(https://the7.io/elementor-ai/wp-content/uploads/sites/132/2024/12/mask-art-01.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center center;
+        -webkit-mask-repeat: no-repeat;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        inset: -80px;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(155, 120, 255, 0.7),
+          rgba(100, 60, 255, 0.3),
+          transparent 75%
+        );
+        filter: blur(70px);
+        z-index: 0;
+      }
+    }
+  }
+}
+
+/* icon */
+.contact-icon {
+  font-size: 24px;
+  color: rgb(158, 138, 251);
+}

@@ -1,0 +1,36 @@
+.course {
+  margin-top: 150px;
+  &-title {
+    font-size: 54px;
+    gap: 20px;
+    margin-bottom: 60px;
+    h2 {
+      color: #efeeff;
+    }
+    h3 {
+      color: #9e8afb;
+    }
+  }
+  &-content {
+    gap: 32px;
+    &-item {
+      width: 23%;
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+      }
+      h4 {
+        margin-top: 30px;
+        font-size: 26px;
+        color: #efeeff;
+      }
+      p {
+        line-height: 1.5;
+        margin-top: 20px;
+        font-size: 18px;
+        color: rgba(239, 238, 255, 0.7490196078);
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.productivity {
+  margin-top: 150px;
+  display: flex;
+  gap: 130px;
+  &-content {
+    &-subtitle {
+      font-size: 26px;
+      color: #9e8afb;
+    }
+    &-title {
+      font-size: 54px;
+      margin-top: 30px;
+      line-height: 1.2;
+      color: #efeeff;
+    }
+    &-descc {
+      font-size: 20px;
+      margin-top: 40px;
+      line-height: 1.5;
+      color: rgba(239, 238, 255, 0.7490196078);
+    }
+    &-desc {
+      font-size: 20px;
+      margin-top: 20px;
+      line-height: 1.5;
+      color: rgba(239, 238, 255, 0.7490196078);
+    }
+    &-btn {
+      margin-top: 40px;
+      button {
+        padding: 20px 50px;
+        border-radius: 999px;
+        color: rgb(239, 238, 255);
+        font-weight: 600;
+        font-size: 16px;
+        background: linear-gradient(
+          180deg,
+          var(--purple-mid),
+          var(--purple-dark)
+        );
+        border: none;
+      }
+      button:hover {
+        background: #6316ff;
+      }
+    }
+  }
+  &-img {
+    img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      -webkit-mask-image: url(https://the7.io/elementor-ai/wp-content/uploads/sites/132/2024/12/mask-art-01.svg);
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      inset: -80px;
+      background: radial-gradient(
+        circle at 50% 50%,
+        rgba(155, 120, 255, 0.7),
+        rgba(100, 60, 255, 0.3),
+        transparent 75%
+      );
+      filter: blur(70px);
+      z-index: 0;
+    }
+  }
+}

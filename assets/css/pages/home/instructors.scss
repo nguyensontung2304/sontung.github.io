@@ -1,0 +1,53 @@
+.instructors {
+  margin-top: 150px;
+  width: 100%;
+  &-title {
+    margin-bottom: 60px;
+    h2 {
+      font-size: 54px;
+      font-weight: 500;
+      color: rgb(239, 238, 255);
+      line-height: 1.2;
+    }
+    span {
+      color: rgb(158, 138, 251);
+      font-size: 54px;
+      font-weight: 500;
+    }
+  }
+  &-content {
+    display: flex;
+    gap: 10px;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      &-img {
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 18px;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      &-name {
+        font-size: 26px;
+        font-weight: 500;
+        color: rgb(239, 238, 255);
+      }
+      &-position {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(158, 138, 251);
+      }
+      &-text {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(239, 238, 255, 0.75);
+        line-height: 1.6;
+      }
+    }
+  }
+}

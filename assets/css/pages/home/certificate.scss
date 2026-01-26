@@ -1,0 +1,68 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  &-top {
+    display: flex;
+    gap: 40px;
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 190px;
+      h3 {
+        font-size: 54px;
+        font-weight: 500;
+        color: rgb(239, 238, 255);
+        line-height: 1.2;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(239, 238, 255, 0.75);
+        line-height: 1.6;
+      }
+      span {
+        font-size: 54px;
+        font-weight: 500;
+        color: rgb(158, 138, 251);
+      }
+    }
+    &-img {
+      margin-top: 120px;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    gap: 22px;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &-icon {
+        width: 58px;
+        height: 58px;
+        background-color: #6938ef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+      &-title {
+        font-size: 22px;
+        font-weight: 500;
+        color: rgb(239, 238, 255);
+      }
+      &-text {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(239, 238, 255, 0.75);
+        line-height: 1.5;
+      }
+    }
+  }
+}
