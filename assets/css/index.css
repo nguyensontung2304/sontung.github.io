@@ -1066,7 +1066,7 @@ body {
 }
 
 .navbar-bar {
-  padding: 10px;
+  padding: 5px;
   background: linear-gradient(
     to bottom,
     rgb(192, 181, 249) 0%,
@@ -1081,13 +1081,13 @@ body {
   z-index: 1000;
 }
 
-.navbar-bar-banner-img img {
+.navbar-bar-top-img img {
   display: block;
   width: 100%;
 }
 
 .navbar-bar-top-lish {
-  gap: 20px;
+  gap: 30px;
   margin: auto;
   font-size: 18px;
 }
@@ -1100,6 +1100,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 2px;
 }
 
 .navbar-bar-top-btn button {
@@ -1118,6 +1119,13 @@ body {
 }
 
 /* header */
+.header-top {
+  /* background-image: url(https://the7.io/elementor-ai/wp-content/uploads/sites/132/2025/01/art-bg-color.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
 .header-top-title {
   font-size: 80px;
   line-height: 1.1em;
@@ -1409,7 +1417,7 @@ body {
 .skills {
   display: flex;
   width: 100%;
-  margin-top: 300px;
+  margin-top: 150px;
   margin-bottom: 130px;
   border-radius: 40px;
   overflow: hidden;
@@ -1652,12 +1660,22 @@ body {
 }
 
 .stories-content {
-  display: flex;
-  gap: 30px;
 }
 
-.stories-content-item {
-  padding: 35px;
+.stories-content-viewport {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.stories-content-viewport-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.4s ease;
+}
+
+.stories-content-viewport-track-item {
+  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1671,30 +1689,30 @@ body {
   );
 }
 
-.stories-content-item-text {
+.stories-content-viewport-track-item-text {
   font-size: 21px;
   font-weight: 500;
   color: rgba(11, 1, 36, 0.84);
 }
 
-.stories-content-item-poster {
+.stories-content-viewport-track-item-poster {
   display: flex;
   gap: 20px;
 }
 
-.stories-content-item-poster-img {
+.stories-content-viewport-track-item-poster-img {
   width: 54px;
   height: 54px;
   border-radius: 100px;
   overflow: hidden;
 }
 
-.stories-content-item-poster-img img {
+.stories-content-viewport-track-item-poster-img img {
   width: 100%;
   display: block;
 }
 
-.stories-content-item-poster-name {
+.stories-content-viewport-track-item-poster-name {
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -1702,12 +1720,19 @@ body {
   color: rgb(11, 1, 36);
 }
 
-.stories-content-item-poster-position {
+.stories-content-viewport-track-item-poster-position {
   display: flex;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
   color: rgba(11, 1, 36, 0.68);
+}
+
+.stories-content-btn {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /* What You'll Specifically Learn */
@@ -1885,37 +1910,6 @@ body {
   margin-bottom: 5px;
   padding: 40px;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.curriculum-lish-item h3 {
-  font-size: 26px;
-  font-weight: 500;
-  color: rgb(239, 238, 255);
-  line-height: 1.4;
-}
-
-.curriculum-lish-item p {
-  font-size: 18px;
-  font-weight: 400;
-  color: rgba(239, 238, 255, 0.75);
-}
-
-.curriculum-lish-item ul {
-  font-size: 18px;
-  font-weight: 400;
-  color: rgba(239, 238, 255, 0.75);
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 5px;
-}
-
-.curriculum-lish-item span {
-  font-size: 26px;
-  font-weight: 500;
-  color: rgb(158, 138, 251);
 }
 
 .curriculum-lish-item:first-child {
@@ -1926,6 +1920,50 @@ body {
 .curriculum-lish-item:last-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.curriculum-lish-item-order {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.curriculum-lish-item-order h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(158, 138, 251);
+}
+
+.curriculum-lish-item-content {
+}
+
+.curriculum-lish-item-content h3 {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(239, 238, 255);
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.curriculum-lish-item-content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(239, 238, 255, 0.75);
+}
+
+.curriculum-lish-item-content ul {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(239, 238, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 5px;
+}
+
+.curriculum-lish-item-content span {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(158, 138, 251);
 }
 
 .curriculum-introduce {
